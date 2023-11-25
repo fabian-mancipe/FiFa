@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Jugador y Equipo</title>
+</head>
+<body>
+  <h1>Registro de Jugador</h1>
+  <form action="/procesar_registro" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Información del Jugador</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required><br><br>
+      
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+      
+      <label for="posicion">Posición:</label>
+      <input type="text" id="posicion" name="posicion" required><br><br>
+      
+      <label for="numero_camiseta">Número de camiseta:</label>
+      <input type="number" id="numero_camiseta" name="numero_camiseta" required><br><br>
+      
+      <label for="titular">¿Es titular?</label>
+      <input type="checkbox" id="titular" name="titular"><br><br>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Información del Equipo</legend>
+      <label for="nombre_equipo">Nombre del Equipo:</label>
+      <input type="text" id="nombre_equipo" name="nombre_equipo" required><br><br>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Información del Técnico</legend>
+      <label for="nombre_tecnico">Nombre:</label>
+      <input type="text" id="nombre_tecnico" name="nombre_tecnico" required><br><br>
+      
+      <label for="apellido_tecnico">Apellido:</label>
+      <input type="text" id="apellido_tecnico" name="apellido_tecnico" required><br><br>
+      
+      <label for="fecha_nacimiento_tecnico">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento_tecnico" name="fecha_nacimiento_tecnico" required><br><br>
+      
+      <label for="nacionalidad_tecnico">Nacionalidad:</label>
+      <select id="nacionalidad_tecnico" name="nacionalidad_tecnico" required>
+        <option value="Elegir">Elegir</option>
+        <option value="Técnico">Técnico</option>
+        <option value="Asistente">Asistente</option>
+        <option value="Médico">Médico</option>
+        <option value="Preparador">Preparador</option>
+      </select><br><br>
+      
+      <label for="rol_tecnico">Rol:</label>
+      <select id="rol_tecnico" name="rol_tecnico" required>
+        <option value="técnico">Técnico</option>
+        <option value="asistente">Asistente</option>
+        <option value="médico">Médico</option>
+        <option value="preparador">Preparador</option>
+      </select><br><br>
+    </fieldset>
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
